@@ -240,7 +240,7 @@ a.social:hover {
 span.fam-name{
 
       display: none;
-      
+
     }
 
 /* Styles for larger screens */
@@ -275,6 +275,14 @@ span.fam-name{
 
     main p {
         line-height: 1.6em;
+    }
+
+    main ul {
+      margin-top: -5px;
+    }
+
+    main ul li {
+      font-size: .95em;
     }
 
     footer {
