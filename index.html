@@ -172,7 +172,7 @@
   <footer>
     <ul>
       <li>
-        <a class="social linkedin" target="_blank" href="https://br.linkedin.com/in/felipe-peláez-covatti-13146397">LinkedIn</a>
+        <a class="social linkedin" target="_blank" href="https://www.linkedin.com/in/felipepcovatti">LinkedIn</a>
       </li>
       <li>
         <a class="social behance" target="_blank" href="https://www.behance.net/felipepcovatti">Behance</a>
@@ -188,8 +188,8 @@
   <script src="js/jquery-3.1.1.min.js"></script>
   <!--Smooth Scrolling-->
   <script type="text/javascript">
-    var $root = $('html, body');
-    $('a').click(function() {
+    var $root = $('html');
+    $("a[href^='#']").click(function() {
       $root.animate({
         scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
