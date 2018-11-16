@@ -192,7 +192,7 @@
     $("a[href^='#']").click(function(event) {
       event.preventDefault();
       $root.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
+        scrollTop: $($(this).attr('href')).offset().top
       }, 500);
     });
   </script>
