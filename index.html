@@ -188,12 +188,12 @@
   <script src="js/jquery-3.1.1.min.js"></script>
   <!--Smooth Scrolling-->
   <script type="text/javascript">
-    var $root = $('html');
-    $("a[href^='#']").click(function() {
+    const $root = $('body,html');
+    $("a[href^='#']").click(function(event) {
+      event.preventDefault();
       $root.animate({
         scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
-      return false;
     });
   </script>
 </body>
